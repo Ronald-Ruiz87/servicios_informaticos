@@ -1,0 +1,285 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    padding-top: 3.5em; /* Ajusta este valor según la altura total de #contacto-rapido */
+}
+
+#contacto-rapido {
+    background-color: #555;
+    color: #fff;
+    padding: 0.5em 20px; /* Añadí un poco de padding horizontal para que no toque los bordes */
+    font-size: 0.9em;
+    position: fixed; /* Hace que el elemento se fije a una posición en la ventana del navegador */
+    top: 0; /* Lo fija a la parte superior de la ventana */
+    left: 0; /* Lo fija al lado izquierdo de la ventana */
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos (ajusta el valor si es necesario) */
+    display: flex; /* Para alinear el texto y la imagen horizontalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Una ligera sombra para que destaque */
+}
+
+#contacto-rapido p {
+    margin: 0 1em 0 0; /* Espacio a la derecha del texto */
+}
+
+#contacto-rapido img {
+    width: 50px; /* Ajusta el tamaño según necesites */
+    height: auto;
+    vertical-align: middle;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 20px;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Sección Hero */
+#hero {
+    background-color: #e0f7fa; /* Un color claro y atractivo */
+    padding: 5em 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2); /* Degradado sutil */
+}
+
+#hero article {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#hero h2 {
+    font-size: 2.5em;
+    color: #00838f; /* Un tono más oscuro del color de fondo */
+    margin-bottom: 0.5em;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.button {
+    display: inline-block;
+    background-color: #00838f;
+    color: #fff;
+    padding: 1em 2em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 131, 143, 0.3); /* Sombra al botón */
+}
+
+.button:hover {
+    background-color: #005c5e;
+}
+
+/* Sección de Servicios */
+#servicios {
+    padding: 4em 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#servicios h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+#servicios article {
+    border: 1px solid #ddd;
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#servicios article:nth-child(odd) {
+    background-color: #f9f9f9; /* Contraste entre artículos */
+}
+
+#servicios h3 {
+    color: #00838f;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+#servicios p {
+    margin-bottom: 1em;
+}
+
+#servicios ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+#servicios ul li {
+    margin-bottom: 0.5em;
+    position: relative;
+    padding-left: 1.2em;
+}
+
+#servicios ul li::before {
+    content: '✓'; /* Checkmark como viñeta */
+    color: #00838f;
+    position: absolute;
+    left: 0;
+}
+
+/* Sección Sobre Mí */
+#sobre-mi {
+    background-color: #f9f9f9;
+    padding: 4em 20px;
+    text-align: center;
+}
+
+#sobre-mi h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+#sobre-mi p {
+    line-height: 1.8;
+    margin-bottom: 1em;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Sección de Contacto */
+#contacto {
+    background-color: #fff;
+    padding: 4em 20px;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+#contacto p {
+    margin-bottom: 1.5em;
+}
+
+#contacto address {
+    font-style: normal;
+    margin-bottom: 1.5em;
+}
+
+#contacto address a {
+    color: #00838f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contacto address a:hover {
+    color: #005c5e;
+}
+
+#contacto h3 {
+    font-size: 1.5em;
+    color: #555;
+    margin-top: 1.5em; /* Espacio superior para separarlo del address */
+    margin-bottom: 1em;
+    text-align: center; /* Alineación del subtítulo */
+}
+
+#contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#contacto label {
+    font-weight: bold;
+    text-align: left;
+}
+
+#contacto input[type="text"],
+#contacto input[type="tel"],
+#contacto input[type="email"],
+#contacto textarea {
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contacto textarea {
+    resize: vertical;
+}
+
+#contacto button[type="submit"] {
+    background-color: #00838f;
+    color: #fff;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contacto button[type="submit"]:hover {
+    background-color: #005c5e;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 0.9em;
+}
